@@ -1,0 +1,3 @@
+Editando SOMENTE o arquivo "style.css", aplique propriedades do CSS para que o "index.html" seja exibido horizontalmente centralizado e de acordo com o "template.png".
+*As dimensões do retângulo azul são (LxA): 400px x 300px
+*As dimensões dos retângulos vermelhos são (LxA): 100px x 50px 

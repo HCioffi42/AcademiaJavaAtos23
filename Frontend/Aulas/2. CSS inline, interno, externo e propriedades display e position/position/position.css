@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    height: 200vh;
+}
+
+.pai {
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    margin: 40px auto;
+    position: relative;
+}
+
+.filhos {
+    width: 200px;
+    height: 200px;
+    color: white;
+    line-height: 200px;
+    text-align: center;
+}
+
+.filho1 {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.filho2 {
+    background-color: blue;  
+}
+
+.primo {
+    width: 400px;
+    height: 100px;
+    background-color: tomato;
+    line-height: 100px;
+    text-align: center;
+    position: sticky;
+    top: 345px;
+}

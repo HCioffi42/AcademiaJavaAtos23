@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Exemplos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script>
+        // Exemplo 2
+        console.log('Área do círculo: ' + ((Math.PI * Math.pow(57,2))/100).toFixed(2) + 'm²')
+    </script>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="p-5 mb-4 bg-dark text-white rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">JavaScript - Exemplos</h1>
+              <p class="col-md-8 lead">Página com algumas das diversas utilizações para a linguagem de script em alto nível, com tipagem dinâmica fraca e multiparadigma.</p>
+            </div>
+        </div>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h2 class="display-7 fw-bold">Exemplo 1</h2>
+              <p class="col-md-8 lead" >Ao clicar no botão, o navegador exibirá um alerta para o usuário.</p>
+              <button id="btn-alerta" class="btn btn-primary" onclick="alert('Botão pressionado!')">Exibir alerta</button>
+            </div>
+        </div>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h2 class="display-7 fw-bold">Exemplo 2</h2>
+              <p class="col-md-8 lead">O console do navegador deve imprimir a área em metros (m) de um círculo com raio de 57cm.</p>
+            </div>
+        </div>
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h2 class="display-7 fw-bold">Exemplo 3</h2>
+              <p class="col-md-8 lead" id="substitui-p-texto">Ao clicar no botão, o texto deste parágrafo será substituído.
+            </p>
+              <button class="btn btn-warning" onclick="substituirParagrafo()">Substituir texto</button>
+            </div>
+        </div>
+        <div class="p-5 mb-4 bg-light rounded-3" id="exemplo-4">
+            <div class="container-fluid py-5">
+              <h2 class="display-7 fw-bold">Exemplo 4</h2>
+              <p class="col-md-8 lead">O "Exemplo 4" será ocultado assim que o botão for pressionado.
+            </p>
+            <button class="btn btn-danger">Ocultar exemplo</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

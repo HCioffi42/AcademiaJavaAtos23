@@ -1,0 +1,18 @@
+.pai {
+    max-width: 600px;
+    height: 600px;
+    background-color: #CCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filhos {
+    width: 100px;
+    height: 150px;
+    background-color: tomato;
+    line-height: 150px;
+    border: 1px solid black;
+    text-align: center;
+}

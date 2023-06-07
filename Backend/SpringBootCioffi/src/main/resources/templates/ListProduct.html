@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns:td="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card List</title>
+</head>
+<body>
+    <h1>Your Card List</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr th:each="product: ${ListProduct}">
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.code}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.color}"></td>
+            <td th:text="${product.prices}"></td>
+            <td th:text="${product.quantity}"></td>
+            <td> <a td:href="@{/update/{id}(id=${product.id})}">Update</a></td>
+            <td> <a td:href="@{/delete/{id}(id=${product.id})}">Delete</a></td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>

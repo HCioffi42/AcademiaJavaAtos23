@@ -1,0 +1,251 @@
+May 12, 2023 2:39:48 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 2:39:53 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:40:11 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 2:40:11 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 2:40:11 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:46:59 PM AcademiaJavaJDBC.BancoDeDados desconectar
+INFO: Você desconectou o Banco de Dados
+May 12, 2023 2:49:00 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 2:49:05 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:49:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 2:49:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 2:49:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:50:04 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 2:50:06 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:50:16 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 2:50:16 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 2:50:16 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:56:57 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 2:57:00 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:57:00 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 12, 2023 2:57:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você atualizou o Banco de Dados com sucesso.
+May 12, 2023 2:57:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 2:57:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:58:02 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 2:58:03 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:58:03 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 12, 2023 2:58:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você atualizou o Banco de Dados com sucesso.
+May 12, 2023 2:58:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 2:58:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:58:27 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:58:27 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 12, 2023 2:58:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você removeu dados com sucesso.
+May 12, 2023 2:58:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 2:58:29 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:58:39 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:58:39 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 12, 2023 2:58:47 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 2:59:01 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 2:59:01 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 2:59:01 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 2:59:16 PM AcademiaJavaJDBC.BancoDeDados desconectar
+INFO: Você desconectou o Banco de Dados
+May 12, 2023 3:13:34 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 3:13:37 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 3:13:47 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 3:13:47 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 3:13:47 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 3:16:01 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 3:16:09 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 3:16:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Não foi possível executar a operação de inserção/alteração/exclusão no banco de dados.
+May 12, 2023 3:16:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 0 linhas foram afetadas.
+May 12, 2023 3:16:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 3:20:31 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 3:20:33 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 3:20:42 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você inseriu dados com sucesso.
+May 12, 2023 3:20:42 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 3:20:42 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 3:25:34 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: 
+ O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 12, 2023 3:25:39 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 3:25:56 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você inseriu dados com sucesso.
+May 12, 2023 3:25:56 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 3:25:56 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 12, 2023 3:26:26 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 12, 2023 3:26:26 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 12, 2023 3:26:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você atualizou o Banco de Dados com sucesso.
+May 12, 2023 3:26:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 12, 2023 3:26:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 6:50:27 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 6:51:04 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 6:51:18 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 6:51:24 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 6:52:21 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 6:52:26 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 6:52:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você inseriu dados com sucesso.
+May 13, 2023 6:52:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 13, 2023 6:52:48 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 6:52:51 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 6:52:51 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:05:11 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 7:05:17 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:05:17 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:05:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você removeu dados com sucesso.
+May 13, 2023 7:05:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 13, 2023 7:05:20 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 7:05:23 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:05:23 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:05:38 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:05:38 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:05:40 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você removeu dados com sucesso.
+May 13, 2023 7:05:40 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 13, 2023 7:05:40 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 7:06:06 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:06:06 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:08:42 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 13, 2023 7:08:54 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:09:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você inseriu dados com sucesso.
+May 13, 2023 7:09:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 13, 2023 7:09:18 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 7:09:31 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:09:31 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:10:29 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 13, 2023 7:10:29 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 13, 2023 7:10:34 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você removeu dados com sucesso.
+May 13, 2023 7:10:34 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 13, 2023 7:10:34 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 13, 2023 7:12:45 PM AcademiaJavaJDBC.BancoDeDados desconectar
+INFO: Você desconectou o Banco de Dados
+May 19, 2023 1:40:10 PM AcademiaJavaJDBC.BancoDeDados main
+INFO: O seu Bando de Dados foi iniciado com sucesso. Qual opção você precisa usar?
+May 19, 2023 1:40:15 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 19, 2023 1:40:15 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.
+May 19, 2023 1:40:19 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: Você removeu dados com sucesso.
+May 19, 2023 1:40:19 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 1 linhas foram afetadas.
+May 19, 2023 1:40:19 PM AcademiaJavaJDBC.BancoDeDados inserirAlterarExcluir
+INFO: 
+ Operações realizadas com sucesso.
+May 19, 2023 1:40:22 PM AcademiaJavaJDBC.BancoDeDados conectar
+INFO: conexão estabelecida
+May 19, 2023 1:40:22 PM AcademiaJavaJDBC.BancoDeDados consultar
+INFO: Você realizou sua consulta com sucesso.

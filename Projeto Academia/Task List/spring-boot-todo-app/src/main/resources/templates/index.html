@@ -1,0 +1,64 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" />
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Spring Boot To Do App</h1>
+        <hr/>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Actions</th>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Is Complete</th>
+                    <th>Created At</th>
+                    <th>Updated At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="item : ${todoItems}" th:class="${item.isComplete} ? 'alert alert-success' : 'alert alert-warning'">
+                    <td>
+                     <div class="btn btn-group-sm" role="group">
+                         <a class="btn btn-info" th:href="@{/edit/{id}(id=${item.id})}">
+                            <i class="bi bi-pencil-fill"></i>Edit Item</a>
+                         <a class="btn btn-danger" th:href="@{/delete/{id}(id=${item.id})}">
+                            <i class="bi bi-trash-fill"></i>Delete Item</a>
+                     </div>
+                 </td>
+                 <td th:text="${item.id}"></td>
+                 <td th:text="${item.description}"></td>
+                 <td>
+<!--                     <div class="form-check">-->
+<!--                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">-->
+<!--                         <label class="form-check-label" for="flexCheckDefault">-->
+<!--                             Completed-->
+<!--                         </label>-->
+<!--                     </div>-->
+                     <span th:if="${item.isComplete} == true" th:text="Yes"></span>
+                     <span th:unless="${item.isComplete} == true" th:text="No"></span>
+                 </td>
+                 <td th:text="${item.createdAt}"></td>
+                 <td th:text="${item.updatedAt}"></td>
+
+             </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <a class="btn btn-outline-success" href="/create-todo">
+                <i class="bi bi-plus-square-fill">Create a To Do</i></a>
+        </p>
+    </div>
+
+    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

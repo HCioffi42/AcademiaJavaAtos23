@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" />
+  
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <a href="#">Sair</a>
+  </div>
+  <div class="main-container">
+    <div class="adicionar-tarefa">
+      <h2>Adicionar Tarefa</h2>
+      <form>
+        <label for="nome-tarefa">Nome da Tarefa:</label>
+        <input type="text" id="nome-tarefa" name="nome-tarefa" required>
+        <label for="prazo-tarefa">Prazo:</label>
+        <input type="date" id="prazo-tarefa" name="prazo-tarefa" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </div>
+    <div class="lista-tarefas">
+      <h2>Lista de Tarefas</h2>
+      <ul>
+        <li>
+          <h3>Tarefa 1</h3>
+          <p>Prazo: 01/01/2022</p>
+          <button>Concluir</button>
+        </li>
+        <li>
+          <h3>Tarefa 2</h3>
+          <p>Prazo: 02/01/2022</p>
+          <button>Concluir</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

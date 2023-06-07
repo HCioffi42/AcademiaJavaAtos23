@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeelaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Card</title>
+</head>
+<body>
+    <h1>Update Card</h1>
+    <form action="#" th:action="@{/update}" th:object="${product}" method="post">
+        <p>
+            ID: <input type="text" th:field="*{id}" />
+        </p>
+        <p>
+            Code: <input type="text" th:field="*{code}" />
+        </p>
+        <p>
+            Name: <input type="text" th:field="*{name}" />
+        </p>
+        <p>
+            Color: <input type="text" th:field="*{color}" />
+        </p>
+        <p>
+            Price: <input type="text" th:field="*{price}">
+        </p>
+        <p>
+            Quantity: <input type="text" th:field="*{quantity}">
+        </p>
+        <p>
+            <input type="submit" value="Update"> <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

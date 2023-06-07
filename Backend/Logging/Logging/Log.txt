@@ -1,0 +1,46 @@
+Apr 27, 2023 7:25:47 PM Main main
+INFO: Log de informação
+Apr 27, 2023 7:25:47 PM Main main
+WARNING: Log de Aviso
+Apr 27, 2023 7:25:47 PM Main main
+SEVERE: Log Severo
+Apr 27, 2023 7:39:18 PM Main main
+INFO: Log de informação
+Apr 27, 2023 7:39:18 PM Main main
+WARNING: Log de Aviso
+Apr 27, 2023 7:39:18 PM Main main
+SEVERE: Log Severo
+May 08, 2023 7:23:12 PM Main main
+INFO: Log de informação
+May 08, 2023 7:23:12 PM Main main
+WARNING: Log de Aviso
+May 08, 2023 7:23:12 PM Main main
+SEVERE: Log Severo
+May 08, 2023 7:53:49 PM DebugEx.Main main
+INFO: Log de informação
+May 08, 2023 7:53:49 PM DebugEx.Main main
+WARNING: Log de Aviso
+May 08, 2023 7:53:49 PM DebugEx.Main main
+SEVERE: Log Severo
+May 08, 2023 7:56:29 PM DebugEx.Main main
+INFO: Log de informação
+May 08, 2023 7:56:29 PM DebugEx.Main main
+WARNING: Log de Aviso
+May 08, 2023 7:56:29 PM DebugEx.Main main
+SEVERE: Log Severo
+May 08, 2023 7:56:33 PM DebugEx.Main main
+INFO: Número 3.0 inserido
+May 08, 2023 7:58:11 PM DebugEx.Main main
+INFO: Log de informação
+May 08, 2023 7:58:11 PM DebugEx.Main main
+WARNING: Log de Aviso
+May 08, 2023 7:58:11 PM DebugEx.Main main
+SEVERE: Log Severo
+May 08, 2023 7:58:15 PM DebugEx.Main main
+INFO: Operador  / utilisado.
+May 08, 2023 7:58:19 PM DebugEx.Main main
+INFO: Número 2.0 inserido
+May 08, 2023 7:58:22 PM DebugEx.Main main
+INFO: Número 3.0 inserido
+May 08, 2023 7:58:22 PM DebugEx.Main main
+INFO: Resultado final foi: 0.6666667

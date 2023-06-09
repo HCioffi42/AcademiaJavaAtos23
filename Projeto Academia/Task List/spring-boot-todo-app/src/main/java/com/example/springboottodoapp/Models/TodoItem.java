@@ -16,8 +16,9 @@ import java.time.Instant;
 public class TodoItem implements Serializable {
 
     @Id
-    @SequenceGenerator(name="todo_seq",sequenceName = "todo_seq",allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator ="todo_seq" )
+    @SequenceGenerator(name="movie_sequence",sequenceName = "movie_sequence",allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator ="movie_sequence" )
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotBlank(message = "Description is required")

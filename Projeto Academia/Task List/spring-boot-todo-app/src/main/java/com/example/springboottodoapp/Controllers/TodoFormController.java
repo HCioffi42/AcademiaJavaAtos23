@@ -4,7 +4,6 @@ import com.example.springboottodoapp.Models.TodoItem;
 import com.example.springboottodoapp.Services.TodoItemService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -43,7 +42,6 @@ public class TodoFormController {
     }
 
     @GetMapping("/edit/{id}")
-    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public String showUpdateForm(@PathVariable("id") Long id, Model model){
         TodoItem todoItem = todoItemService
         .getById(id)

@@ -101,7 +101,6 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById('t-github').textContent = github;
     document.getElementById('t-academia').textContent = academia;
     document.getElementById('t-professor').textContent = professor;
-    document.getElementById()
 
     // MOSTRA A TABELA
     document.getElementById('tabela-dados').classList.remove('d-none');

@@ -2,57 +2,44 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog :: Home</title>
 </head>
 <body>
 <div class="container">
     <h1>Spring Boot Blog Application</h1>
     <hr />
-    <div>
-        <a class="btn btn-outline-success"
-               th:href="@{/posts/new}"
-               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            <strong>New Post</strong></a>
-    </div>
-    <div class="posts-container">
-        <div class="post" th:each="post : ${posts}">
-            <h4><a th:href="@{'/posts/' + ${post.id}}" th:text="${post.title}">Title</a></h4>
-            <h6 th:text="${post.body}">body text</h6>
-            <p th:text="'Written by ' + ${post.account.firstName} + ' '+ ${post.account.lastName}"></p>
-            <p th:text="'Published at ' + ${post.createdAt}">Created At</p>
-            <p th:text="'Updated at ' + ${post.updatedAt}">Updated At</p>
+    <ul>
+        <li><a th:href="@{/blogPosts/new}">New Post</a></li>
+    </ul>
+    <div class="blogPosts-container">
+        <div class="blogPost" th:each="blogPost : ${blogPosts}">
+            <h2><a th:href="@{'/blogPosts/' + ${blogPost.id}}" th:text="${blogPost.title}">Title</a></h2>
+            <h5 th:text="'Written by ' + ${blogPost.account.firstName}">Account First Name</h5>
+            <h5 th:text="'Published at ' + ${blogPost.createdAt}">Created At</h5>
+            <h5 th:text="'Updated at ' + ${blogPost.updatedAt}">Updated At</h5>
+            <p th:text="${blogPost.body}">body text</p>
             <br>
         </div>
     </div>
     <hr />
-    <div sec:authorize="!isAuthenticated()">
-        <a class="btn btn-outline-success"
-           th:href="@{/register}"
-           style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            <strong>Register</strong></a>
-        <a class="btn btn-outline-success"
-           th:href="@{/login}"
-           style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-            <strong>Login</strong></a>
-    </div>
+    <ul sec:authorize="!isAuthenticated()">
+        <li><a th:href="@{/register}">Register</a></li>
+        <li><a th:href="@{/login}">Login</a></li>
+    </ul>
     <div sec:authorize="isAuthenticated()">
         <form th:action="@{/logout}"
               method="POST">
             <div>
-                <label>Welcome, <span sec:authentication="name"></span></label>
+                <label>Hi, <span sec:authentication="name">Username</span></label>
             </div>
-            <button class="btn btn-outline-dark"
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
-                    type="submit"><strong>Logout</strong></button>
+            <button type="submit">Logout</button>
         </form>
     </div>
 
 </div>
-<script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>
+
 </body>
 </html>

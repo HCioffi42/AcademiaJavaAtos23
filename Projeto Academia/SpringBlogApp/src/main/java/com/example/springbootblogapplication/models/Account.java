@@ -23,8 +23,6 @@ public class Account implements Serializable {
 
     private String email;
 
-//    private String userName;
-
     private String password;
 
     private String firstName;
@@ -32,7 +30,7 @@ public class Account implements Serializable {
     private String lastName;
 
     @OneToMany(mappedBy = "account")
-    private List<Post> posts;
+    private List<BlogPost> blogPosts;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(

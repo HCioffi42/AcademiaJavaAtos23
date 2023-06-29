@@ -1,6 +1,6 @@
 package com.example.springbootblogapplication.controllers;
 
-import com.example.springbootblogapplication.models.Post;
+import com.example.springbootblogapplication.models.BlogPost;
 import com.example.springbootblogapplication.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,8 +16,8 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        List<Post> posts = postService.getAll();
-        model.addAttribute("posts", posts);
+        List<BlogPost> blogPosts = postService.getAll();
+        model.addAttribute("posts", blogPosts);
         return "home";
     }
 

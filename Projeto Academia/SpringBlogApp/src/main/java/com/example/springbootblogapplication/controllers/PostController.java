@@ -1,7 +1,7 @@
 package com.example.springbootblogapplication.controllers;
 
 import com.example.springbootblogapplication.models.Account;
-import com.example.springbootblogapplication.models.Post;
+import com.example.springbootblogapplication.models.BlogPost;
 import com.example.springbootblogapplication.services.AccountService;
 import com.example.springbootblogapplication.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,12 +30,12 @@ public class PostController {
     public String getPost(@PathVariable Long id, Model model) {
 
         // find post by id
-        Optional<Post> optionalPost = this.postService.getById(id);
+        Optional<BlogPost> optionalPost = this.postService.getById(id);
 
         // if post exists put it in model
         if (optionalPost.isPresent()) {
-            Post post = optionalPost.get();
-            model.addAttribute("post", post);
+            BlogPost blogPost = optionalPost.get();
+            model.addAttribute("post", blogPost);
             return "post";
         } else {
             return "404";
@@ -44,19 +44,19 @@ public class PostController {
 
     @PostMapping("/posts/{id}")
     @PreAuthorize("isAuthenticated()")
-    public String updatePost(@PathVariable Long id, Post post, BindingResult result, Model model) {
+    public String updatePost(@PathVariable Long id, BlogPost blogPost, BindingResult result, Model model) {
 
-        Optional<Post> optionalPost = postService.getById(id);
+        Optional<BlogPost> optionalPost = postService.getById(id);
         if (optionalPost.isPresent()) {
-            Post existingPost = optionalPost.get();
+            BlogPost existingBlogPost = optionalPost.get();
 
-            existingPost.setTitle(post.getTitle());
-            existingPost.setBody(post.getBody());
+            existingBlogPost.setTitle(blogPost.getTitle());
+            existingBlogPost.setBody(blogPost.getBody());
 
-            postService.save(existingPost);
+            postService.save(existingBlogPost);
         }
 
-        return "redirect:/posts/" + post.getId();
+        return "redirect:/posts/" + blogPost.getId();
     }
 
     @GetMapping("/posts/new")
@@ -70,9 +70,9 @@ public class PostController {
 
         Optional<Account> optionalAccount = accountService.findOneByEmail(authUsername);
         if (optionalAccount.isPresent()) {
-            Post post = new Post();
-            post.setAccount(optionalAccount.get());
-            model.addAttribute("post", post);
+            BlogPost blogPost = new BlogPost();
+            blogPost.setAccount(optionalAccount.get());
+            model.addAttribute("post", blogPost);
             return "post_new";
         } else {
             return "redirect:/";
@@ -81,17 +81,17 @@ public class PostController {
 
     @PostMapping("/posts/new")
     @PreAuthorize("isAuthenticated()")
-    public String createNewPost(@ModelAttribute Post post, Principal principal) {
+    public String createNewPost(@ModelAttribute BlogPost blogPost, Principal principal) {
         String authUsername = "anonymousUser";
         if (principal != null) {
             authUsername = principal.getName();
         }
-        if (post.getAccount().getEmail().compareToIgnoreCase(authUsername) < 0) {
+        if (blogPost.getAccount().getEmail().compareToIgnoreCase(authUsername) < 0) {
             // TODO: some kind of error?
             // our account email on the Post not equal to current logged in account!
         }
-        postService.save(post);
-        return "redirect:/posts/" + post.getId();
+        postService.save(blogPost);
+        return "redirect:/posts/" + blogPost.getId();
     }
 
     @GetMapping("/posts/{id}/edit")
@@ -99,11 +99,11 @@ public class PostController {
     public String getPostForEdit(@PathVariable Long id, Model model) {
 
         // find post by id
-        Optional<Post> optionalPost = postService.getById(id);
+        Optional<BlogPost> optionalPost = postService.getById(id);
         // if post exist put it in model
         if (optionalPost.isPresent()) {
-            Post post = optionalPost.get();
-            model.addAttribute("post", post);
+            BlogPost blogPost = optionalPost.get();
+            model.addAttribute("post", blogPost);
             return "post_edit";
         } else {
             return "404";
@@ -115,11 +115,11 @@ public class PostController {
     public String deletePost(@PathVariable Long id) {
 
         // find post by id
-        Optional<Post> optionalPost = postService.getById(id);
+        Optional<BlogPost> optionalPost = postService.getById(id);
         if (optionalPost.isPresent()) {
-            Post post = optionalPost.get();
+            BlogPost blogPost = optionalPost.get();
 
-            postService.delete(post);
+            postService.delete(blogPost);
             return "redirect:/";
         } else {
             return "404";

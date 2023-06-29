@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import com.example.springbootblogapplication.models.BlogPost;
+import com.example.springbootblogapplication.models.Post;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,18 +42,18 @@ public class RssFeedController {
     Date postDate = new Date();
     channel.setPubDate(postDate);
     List<Item> feed = new ArrayList<>();
-    List<BlogPost> blogPosts = postService.getAll();
-    for(BlogPost blogPost : blogPosts) {
+    List<Post> posts = postService.getAll();
+    for(Post post : posts) {
       Item item = new Item();
       item.setAuthor("Foo");
-      item.setLink(baseUrl + "/posts/" + blogPost.getId());
-      item.setTitle(blogPost.getTitle());
-      item.setUri(baseUrl + "/posts/" + blogPost.getId());
+      item.setLink(baseUrl + "/posts/" + post.getId());
+      item.setTitle(post.getTitle());
+      item.setUri(baseUrl + "/posts/" + post.getId());
 
       Description descr = new Description();
-      descr.setValue(blogPost.getBody());
+      descr.setValue(post.getBody());
       item.setDescription(descr);
-      item.setPubDate(Date.from(blogPost.getUpdatedAt().atZone(ZoneId.systemDefault()).toInstant()));
+      item.setPubDate(Date.from(post.getUpdatedAt().atZone(ZoneId.systemDefault()).toInstant()));
   
       //channel.setItems(Collections.singletonList(item));
       feed.add(item);

@@ -32,6 +32,7 @@ public class MyUserDetailsService implements UserDetailsService {
                 .map(authority -> new SimpleGrantedAuthority(authority.getName()))
                 .collect(Collectors.toList());
 
-        return new org.springframework.security.core.userdetails.User(account.getEmail(), account.getPassword(), grantedAuthorities); // (2)
+        return new org.springframework.security.core.userdetails.User(account.getEmail(),
+                account.getPassword(), grantedAuthorities);
     }
 }

@@ -1,6 +1,6 @@
 package com.example.springbootblogapplication.services;
 
-import com.example.springbootblogapplication.models.BlogPost;
+import com.example.springbootblogapplication.models.Post;
 import com.example.springbootblogapplication.repositories.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,24 +15,24 @@ public class PostService {
     @Autowired
     private PostRepository postRepository;
 
-    public Optional<BlogPost> getById(Long id) {
+    public Optional<Post> getById(Long id) {
         return postRepository.findById(id);
     }
 
-    public List<BlogPost> getAll() {
+    public List<Post> getAll() {
         return postRepository.findAll();
     }
 
-    public BlogPost save(BlogPost blogPost) {
-        if (blogPost.getId() == null) {
-            blogPost.setCreatedAt(LocalDateTime.now());
+    public Post save(Post post) {
+        if (post.getId() == null) {
+            post.setCreatedAt(LocalDateTime.now());
         }
-        blogPost.setUpdatedAt(LocalDateTime.now());
-        return postRepository.save(blogPost);
+        post.setUpdatedAt(LocalDateTime.now());
+        return postRepository.save(post);
     }
 
-    public void delete(BlogPost blogPost) {
-        postRepository.delete(blogPost);
+    public void delete(Post post) {
+        postRepository.delete(post);
     }
 
 }

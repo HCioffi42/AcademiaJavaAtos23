@@ -22,13 +22,8 @@ public class Account implements Serializable {
     private Long id;
 
     private String email;
-
-//    private String userName;
-
     private String password;
-
     private String firstName;
-
     private String lastName;
 
     @OneToMany(mappedBy = "account")

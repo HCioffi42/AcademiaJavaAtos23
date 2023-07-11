@@ -8,29 +8,78 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" >
     <title>Blog :: Post</title>
 </head>
 <body>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container">
-        <a class="btn btn-outline-success" th:href="@{/}">
-            <strong>Home</strong></a>
-        <div class="post">
-            <h4 th:text="${post.title}">Title</h4>
-            <h6 th:text="${post.body}">body text</h6>
-            <p th:text="'Created at ' + ${post.createdAt}">Created At</p>
-            <p th:text="'Updated at ' + ${post.updatedAt}">Updated At</p>
+        <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
+           target="_blank" class="navbar-brand">
+            Project's Repository</a>
+        <ul class="navbar-nav" sec:authorize="!isAuthenticated()">
+            <li class="nav-item">
+                <a class="btn btn-outline-light" th:href="@{/}">
+                    <strong>Home</strong></a>
+                <a class="btn btn-outline-light"
+                   th:href="@{/register}">
+                    <strong>Register</strong></a>
+                <a class="btn btn-outline-light"
+                   th:href="@{/login}">
+                    <strong>Login</strong></a>
+            </li>
+        </ul>
+        <div class="navbar-nav" sec:authorize="isAuthenticated()">
+            <form th:action="@{/logout}"
+                  method="POST">
+                <div class="nav-item">
+                    <label style="color: white">Welcome, @<span sec:authentication="name"></span></label>
+                </div>
+                <div class="nav-item">
+                    <button class="btn btn-outline-light navbar-item"
+                            type="submit"><strong>Logout</strong></button>
+                    <a class="btn btn-outline-light" th:href="@{/}">
+                        <strong>Home</strong></a>
+                </div>
+            </form>
         </div>
-        <div sec:authorize="isAuthenticated()">
-            <a class="btn btn-outline-success"
-               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
-               th:href="@{'/posts/' + ${post.id} + '/edit'}">Edit</a>
-            <a class="btn btn-outline-danger"
-               style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"
-               th:href="@{'/posts/' + ${post.id} + '/delete'}">Delete</a>
-        </div>
-        <a th:href="@{/}">Home</a>
     </div>
-<!--    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>-->
-<!--    <script src="scripts/script.js"></script>-->
+</nav>
+    <div class="container">
+        <h1>Blog Application</h1>
+        <hr />
+        <div class="card text-bg-dark bg-opacity-25">
+            <h4 class="card-header" th:text="${post.title}">Title</h4>
+            <div class="card-body">
+                <h6 th:style="'white-space: pre-line;'"
+                    th:text="${post.body}">body text</h6>
+            </div>
+            <div class="card-footer">
+                <small th:text="'Written by ' + ${post.account.firstName} + ' '+ ${post.account.lastName}"></small><br>
+                <small th:text="'Published at ' + ${post.createdAt}">Created At</small><br>
+                <small th:text="'Updated at ' + ${post.updatedAt}">Updated At</small>
+            </div>
+            <div class="card-footer">
+                <div sec:authorize="isAuthenticated()">
+                    <a class="btn btn-outline-success"
+                       th:href="@{'/posts/' + ${post.id} + '/edit'}">Edit</a>
+                    <a class="btn btn-outline-danger"
+                       id="deleteButton"
+                       th:href="@{'/posts/' + ${post.id} + '/delete'}"
+                       onclick="return confirmDeletion()">Delete</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
 </body>
+<!--    <script th:src="@{/webjars/bootstrap/5.2.2/js/bootstrap.min.js}"></script>-->
+<!--    <script src="scripts/main.js"></script>-->
+<script>
+    function confirmDeletion(){
+        return confirm('Are you sure you want to delete this Post?')
+    }
+
+</script>
 </html>

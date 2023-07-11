@@ -1,0 +1,9 @@
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/860/945/126/romantic-couple-4k-pics-ultra-hd-wallpaper-preview.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.btn{
+    --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;
+}

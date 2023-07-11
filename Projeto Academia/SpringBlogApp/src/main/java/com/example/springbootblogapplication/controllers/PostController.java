@@ -96,6 +96,7 @@ public class PostController {
 
     @GetMapping("/posts/{id}/edit")
     @PreAuthorize("isAuthenticated()")
+    //TODO: preauthorize only the author
     public String getPostForEdit(@PathVariable Long id, Model model) {
 
         // find post by id
@@ -118,7 +119,6 @@ public class PostController {
         Optional<Post> optionalPost = postService.getById(id);
         if (optionalPost.isPresent()) {
             Post post = optionalPost.get();
-
             postService.delete(post);
             return "redirect:/";
         } else {

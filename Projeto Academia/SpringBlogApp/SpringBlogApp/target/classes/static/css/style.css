@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/914/641/75/simple-black-minimalism-battery-wallpaper-preview.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.btn{
+    --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;
+}

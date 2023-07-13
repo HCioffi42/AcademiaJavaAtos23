@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.2/css/bootstrap.min.css}" />
+    <link href="/css/style.css" rel="stylesheet" >
+    <title>Blog :: Post</title>
+</head>
+<body>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="container">
+        <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
+           target="_blank" class="navbar-brand">
+            Project's Repository</a>
+        <ul class="navbar-nav" sec:authorize="!isAuthenticated()">
+            <li class="nav-item">
+                <a class="btn btn-outline-light" th:href="@{/}">
+                    <strong>Home</strong></a>
+                <a class="btn btn-outline-light"
+                   th:href="@{/register}">
+                    <strong>Register</strong></a>
+                <a class="btn btn-outline-light"
+                   th:href="@{/login}">
+                    <strong>Login</strong></a>
+            </li>
+        </ul>
+        <div class="navbar-nav" sec:authorize="isAuthenticated()">
+            <form th:action="@{/logout}"
+                  method="POST">
+                <div class="nav-item">
+                    <label style="color: white">Welcome, @<span sec:authentication="name"></span></label>
+                </div>
+                <div class="nav-item">
+                    <button class="btn btn-outline-light navbar-item"
+                            type="submit" onclick="return confirmLogout()"><strong>Logout</strong></button>
+                    <a class="btn btn-outline-light" th:href="@{/}">
+                        <strong>Home</strong></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+        <h1>Blog Application</h1>
+        <hr />
+        <div class="card text-bg-dark bg-opacity-25">
+            <h4 class="card-header" th:text="${post.title}">Title</h4>
+            <div class="card-body">
+                <h6 th:style="'white-space: pre-line;'"
+                    th:text="${post.body}">body text</h6>
+            </div>
+            <div class="card-footer">
+                <small th:text="'Written by ' + ${post.account.firstName} + ' '+ ${post.account.lastName}"></small><br>
+                <small th:text="'Published at ' + ${post.createdAt}">Created At</small><br>
+                <small th:text="'Updated at ' + ${post.updatedAt}">Updated At</small>
+            </div>
+            <div class="card-footer">
+                <div sec:authorize="isAuthenticated()">
+                    <a class="btn btn-outline-success"
+                       th:href="@{'/posts/' + ${post.id} + '/edit'}">Edit</a>
+                    <a class="btn btn-outline-danger"
+                       id="deleteButton"
+                       th:href="@{'/posts/' + ${post.id} + '/delete'}"
+                       onclick="return confirmDeletion()">Delete</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+<script src="/javascript/main.js" type="text/javascript"></script>
+</body>
+</html>

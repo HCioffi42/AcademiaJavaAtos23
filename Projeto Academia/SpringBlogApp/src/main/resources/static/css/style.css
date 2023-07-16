@@ -1,6 +1,9 @@
 body{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/860/945/126/romantic-couple-4k-pics-ultra-hd-wallpaper-preview.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/911/505/204/star-wars-star-destroyer-landscape-artwork-wallpaper-preview.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
 }
 

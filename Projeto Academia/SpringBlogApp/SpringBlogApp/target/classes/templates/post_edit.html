@@ -10,7 +10,7 @@
     <title>Blog :: Update Post</title>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
            target="_blank" class="navbar-brand">
@@ -35,12 +35,12 @@
         <h2>Update Post</h2>
         <div class="mb-3">
             <label for="new-post-title" class="form-label">Is the Title still the same?</label>
-            <input id="new-post-title" type="text" class="form-control text-bg-dark bg-opacity-25"
+            <input id="new-post-title" type="text" class="form-control text-bg-dark bg-opacity-50"
                    th:field="*{title}" placeholder="Title" required/>
         </div>
         <div class="mb-3">
             <label for="new-post-body" class="form-label">What changed since you last wrote this?</label>
-            <textarea id="new-post-body" class="form-control text-bg-dark bg-opacity-25"
+            <textarea id="new-post-body" class="form-control text-bg-dark bg-opacity-50"
                       th:field="*{body}" rows="10" required></textarea>
         </div>
     <button type="submit" class="btn btn-outline-primary">

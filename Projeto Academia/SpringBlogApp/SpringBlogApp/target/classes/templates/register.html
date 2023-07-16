@@ -10,7 +10,7 @@
     <title>Blog :: Register</title>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
            target="_blank" class="navbar-brand">
@@ -64,8 +64,10 @@
                                id="password"  th:field="*{password}"
                                placeholder="Password" required>
                         <label for="password" class="form-label">Password</label>
-                        <div id="passwordRequirements" class="text-muted">Password must meet the following requirements:</div>
-                        <div id="passwordError" class="text-danger"></div>
+                        <div class="card-body text-bg-dark opacity-50">
+                            <div id="passwordRequirements" class="text-muted">Password must meet the following requirements:</div>
+                            <div id="passwordError" class="text-danger"></div>
+                        </div>
                     </div>
                 </section>
             <hr class="my-4">
@@ -103,6 +105,7 @@
                     <strong>Register</strong></button>
             </div>
         </form>
+        <hr>
     </div>
 <script src="/javascript/main.js" type="text/javascript"></script>
 </body>

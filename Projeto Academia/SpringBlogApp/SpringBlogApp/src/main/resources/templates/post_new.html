@@ -10,7 +10,7 @@
     <title>Blog :: New Post</title>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
            target="_blank" class="navbar-brand">Project's Repository</a>
@@ -33,14 +33,14 @@
             <input type="hidden" th:field="*{createdAt}" />
             <h2>Write a New Post</h2>
             <div class="mb-3 form-floating">
-                <input id="new-post-title" type="text" class="form-control text-bg-dark bg-opacity-25"
+                <input id="new-post-title" type="text" class="form-control text-bg-dark bg-opacity-50"
                        th:field="*{title}" placeholder="Title" required/>
                 <label for="new-post-title" class="form-label">Title</label>
                 <div class="invalid-feedback">Give us a Title to aim for</div>
                 <div class="valid-feedback">Now, THAT'S more like it!</div>
             </div>
             <div class="mb-3 form-floating">
-                <textarea id="new-post-body" class="form-control text-bg-dark bg-opacity-25"
+                <textarea id="new-post-body" class="form-control text-bg-dark bg-opacity-50"
                           th:field="*{body}" rows="10" cols="50"
                           style="white-space: pre-line;"
                           placeholder="Write your post and pour your heart at it!" required></textarea>

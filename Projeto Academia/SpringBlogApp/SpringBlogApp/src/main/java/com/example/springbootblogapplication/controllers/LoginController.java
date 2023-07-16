@@ -12,5 +12,8 @@ public class LoginController {
 
         return "login";
     }
-
+    @GetMapping("/login_error")
+    public String loginFailed(){
+        return "/login_error";
+    }
 }

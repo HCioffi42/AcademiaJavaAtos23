@@ -12,7 +12,7 @@
     <title>Blog :: Home</title>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
            target="_blank" class="navbar-brand">
@@ -46,7 +46,7 @@
     <h1>Blog Application</h1>
     <hr />
     <div class="posts-container" >
-        <div class="card text-bg-dark bg-opacity-25" th:each="post : ${posts}">
+        <div class="card text-bg-dark bg-opacity-50" th:each="post : ${posts}">
             <h4 class="card-header"><a th:href="@{'/posts/' + ${post.id}}" th:text="${post.title}">Title</a></h4>
             <div class="card-body">
                 <h6 th:style="'white-space: pre-line;'" th:text="${post.body}">body text</h6>

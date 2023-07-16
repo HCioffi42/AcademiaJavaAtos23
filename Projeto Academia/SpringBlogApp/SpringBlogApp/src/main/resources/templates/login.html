@@ -10,7 +10,7 @@
     <title>Blog :: Login</title>
 </head>
 <body>
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="container">
         <a href="https://github.com/HCioffi42/AcademiaJavaAtos23/tree/main/Projeto%20Academia/SpringBlogApp"
            target="_blank" class="navbar-brand">
@@ -27,16 +27,22 @@
         <h1>Blog Application</h1>
         <hr>
         <h2>Login</h2>
-        <form action="#" class="col g-3"
+        <form action="#" class="col g-3 needs-validation"
               th:action="@{/login}"
-              method="POST">
+              method="POST" novalidate>
             <div class="col-md-4 form-floating">
-                <input id="email" type="text" name="email" class="form-control text-bg-dark bg-opacity-25" placeholder="Username" />
+                <input id="email" type="text" name="email"
+                       class="form-control text-bg-dark bg-opacity-50" placeholder="Username" required/>
                 <label for="email" class="col-sm-2 col-form-label">Username</label>
+                <div class="invalid-feedback">Please insert you Username</div>
+                <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="col-md-4 form-floating">
-                <input id="password" type="password" name="password" class="form-control text-bg-dark bg-opacity-25"  placeholder="Password" />
+                <input id="password" type="password" name="password"
+                       class="form-control text-bg-dark bg-opacity-50"  placeholder="Password" required/>
                 <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="invalid-feedback">Please fill your password</div>
+                <div class="valid-feedback">Looks good!</div>
             </div>
             <div class="gap-2 mx-auto">
                 <button class="btn btn-outline-primary"

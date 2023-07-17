@@ -13,6 +13,7 @@ Este é o repositório do projeto do Blog Cooperativo, uma aplicação web desen
 
 - Java Spring Boot: Framework utilizado para o desenvolvimento da aplicação web.
 - HTML/CSS: Linguagens de marcação e estilo para criação da interface do usuário.
+- JavaScript: Linguagem de programação Web para adição de funcionalidades aos elementos de HTML/CSS.
 - Thymeleaf: Biblioteca para renderização de templates HTML no servidor.
 - Banco de Dados: Utilizamos o MySQL para armazenar os dados da aplicação.
 - Spring Security: Biblioteca para autenticação e controle de acesso dos usuários.
